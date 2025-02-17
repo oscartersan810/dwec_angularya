@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dado',
@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './dado.component.html',
   styleUrl: './dado.component.css'
 })
-export class DadoComponent {
+export class DadoComponent implements OnInit {
+
+  @Input() valor: string="";
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
