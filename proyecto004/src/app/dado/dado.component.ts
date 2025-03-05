@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-dado',
@@ -6,13 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './dado.component.html',
   styleUrl: './dado.component.css'
 })
-export class DadoComponent implements OnInit {
+export class DadoComponent {
 
   @Input() valor: string="";
 
   constructor() { }
 
-  ngOnInit() {
+  getImageDado(){
+    return `images/dado${this.valor}.png`;
   }
+
 
 }

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'proyecto004';
+  title = 'Juego dados';
   valor1: number;
   valor2: number;
   valor3: number;
